@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeRun — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --eggshell: #F5F3EE;
+      --charcoal: #2A2A2A;
+      --mid: #888880;
+      --rule: #D8D5CE;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--eggshell);
+      color: var(--charcoal);
+      font-family: 'Lora', Georgia, serif;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 4rem;
+      border-bottom: 1px solid var(--rule);
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .wordmark {
+      font-family: 'Vollkorn', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--charcoal);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Vollkorn', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--charcoal); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 6rem 4rem 3rem;
+      max-width: 760px;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Vollkorn', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-family: 'Vollkorn', serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .lede {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--mid);
+      max-width: 520px;
+    }
+
+    /* ── SUMMARY CARD ── */
+    .summary {
+      margin: 0 4rem 3rem;
+      padding: 2rem 2.5rem;
+      border: 1.5px solid var(--charcoal);
+      max-width: 640px;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+
+    .summary-title {
+      font-family: 'Vollkorn', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 1.25rem;
+    }
+
+    .summary-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .summary-items li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .summary-items li::before {
+      content: '—';
+      font-family: 'Vollkorn', serif;
+      color: var(--charcoal);
+      flex-shrink: 0;
+      margin-top: 0.05em;
+    }
+
+    /* ── POLICY BODY ── */
+    .policy {
+      padding: 0 4rem 6rem;
+      max-width: 720px;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+
+    .policy-section {
+      border-top: 1px solid var(--rule);
+      padding: 2.25rem 0;
+    }
+
+    .policy-section:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .policy-section h2 {
+      font-family: 'Vollkorn', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+      letter-spacing: 0.01em;
+    }
+
+    .policy-section p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    .policy-section a {
+      color: var(--charcoal);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .effective {
+      font-family: 'Vollkorn', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      padding: 0 4rem 2rem;
+      animation: fadeUp 0.6s 0.25s ease both;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem 4rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeUp 0.6s 0.4s ease both;
+    }
+
+    footer p {
+      font-family: 'Vollkorn', serif;
+      font-size: 0.75rem;
+      color: var(--mid);
+      letter-spacing: 0.05em;
+    }
+
+    footer a {
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--charcoal); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      nav, .hero, .summary, .policy, .effective, footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .summary { margin-left: 1.5rem; margin-right: 1.5rem; }
+      .hero { padding-top: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="wordmark">TypeRun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Support</a></li>
+      <li><a href="privacy.html" class="active">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-eyebrow">Privacy Policy</p>
+    <h1>Your data<br><em>stays yours.</em></h1>
+    <p class="lede">TypeRun is built on a simple principle: the documents you create are private. We have no ability to access them because they never leave your device.</p>
+  </section>
+
+  <div class="summary" style="animation: fadeUp 0.6s 0.2s ease both;">
+    <p class="summary-title">The short version</p>
+    <ul class="summary-items">
+      <li>We collect no personal data whatsoever.</li>
+      <li>TypeRun works entirely offline — no network requests are made.</li>
+      <li>Your documents and form data are stored only on your device.</li>
+      <li>We use no analytics, no tracking, and no third-party SDKs that collect data.</li>
+      <li>We never share, sell, or transfer any information about you.</li>
+    </ul>
+  </div>
+
+  <p class="effective">Effective date: 1 March 2026</p>
+
+  <section class="policy">
+
+    <div class="policy-section">
+      <h2>Information We Collect</h2>
+      <p>None. TypeRun does not collect, transmit, store, or process any personal information on external servers. The app has no user accounts, no sign-in, and makes no network requests related to your usage or documents.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>How the App Stores Data</h2>
+      <p>Any information you enter into TypeRun — your name, work history, invoice details, or any other content — is saved locally on your device using iOS standard storage (SharedPreferences). This data never leaves your device and is not accessible to us or any third party.</p>
+      <p>You can delete all locally stored data at any time by uninstalling the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>PDF Generation</h2>
+      <p>All PDF documents are generated entirely on-device using local processing. No document content is transmitted over the internet at any point during generation. When you choose to share a PDF using the iOS Share Sheet, sharing is handled entirely by iOS and the destination app you choose — TypeRun has no involvement in that transfer.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>App Store & Purchases</h2>
+      <p>TypeRun is a paid app purchased through the Apple App Store. Apple processes all payments and purchase records in accordance with their own privacy policy. TypeRun does not receive or store any payment information.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Analytics & Tracking</h2>
+      <p>TypeRun contains no analytics SDKs, crash reporting services, advertising frameworks, or any other third-party code that collects data. We do not track how you use the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Children's Privacy</h2>
+      <p>TypeRun does not collect personal information from anyone, including children under 13. The app is a productivity tool with no social features, accounts, or data collection of any kind.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Changes to This Policy</h2>
+      <p>If this privacy policy changes, the updated version will be published at this URL with a revised effective date. As TypeRun collects no data, changes are unlikely to affect you in any meaningful way.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Contact</h2>
+      <p>Questions about this privacy policy? Reach out at <a href="mailto:support@typerun.app">support@typerun.app</a>.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 TypeRun. All rights reserved.</p>
+    <p><a href="index.html">Support</a></p>
+  </footer>
+
+</body>
+</html>
